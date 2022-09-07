@@ -53,11 +53,10 @@
 --HAVING COUNT(c.customer_id) > 300
 --;
 
-SELECT p.customer_id, count(p.payment_id) AS payments  FROM payment p 
-GROUP BY p.customer_id
-ORDER BY payments DESC
-
-;
+-- SELECT p.customer_id, count(p.payment_id) AS payments  FROM payment p 
+-- GROUP BY p.customer_id
+-- ORDER BY payments DESC
+-- ;
 
 
 
