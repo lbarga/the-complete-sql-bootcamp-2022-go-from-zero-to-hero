@@ -32,7 +32,7 @@
 --;
 
 --SELECT f.rating, ROUND(AVG(f.replacement_cost), 2) FROM film f
---GROUP BY f.rating
+--GROUP BY f.rating1
 --;
 
 --SELECT p.customer_id, SUM(p.amount) AS total_amount FROM payment p
