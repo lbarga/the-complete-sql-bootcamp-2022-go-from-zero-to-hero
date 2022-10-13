@@ -115,7 +115,7 @@
 --	AND c.customer_id = p.customer_id 
 --)
 
--- SELF JOIN --
+--SELF JOIN
 --SELECT f1.title, f2.title, f1.length
 --FROM film AS f1
 --INNER JOIN film AS f2
@@ -123,6 +123,11 @@
 --AND f1.length = f2.length
 --AND f1.length = 117;
 
+
+SELECT 
+count(to_char(payment_date, 'day'))
+FROM payment p 
+WHERE to_char(payment_date, 'day') = 'monday   '
 
 
 
