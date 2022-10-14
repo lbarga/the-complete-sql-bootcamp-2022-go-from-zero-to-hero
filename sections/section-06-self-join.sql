@@ -14,7 +14,7 @@
 --INSERT INTO employee (last_name, first_name, boss_id) VALUES('Varela', 'Leandro', 1);
 --INSERT INTO employee (last_name, first_name, boss_id) VALUES('Ferreira', 'Robert', 1);
 --INSERT INTO employee (last_name, first_name, boss_id) VALUES('Xaor', 'Moargak', 1);
---INSERT INTO employee (last_name, first_name, boss_id) VALUES('Cu', 'Piroca', 1);
+--INSERT INTO employee (last_name, first_name, boss_id) VALUES('Talvez', 'Seila', 1);
 --INSERT INTO employee (id,last_name, first_name, boss_id) VALUES(123,'teste', 'teste', 1);
 
 --SELECT * FROM employee e;
