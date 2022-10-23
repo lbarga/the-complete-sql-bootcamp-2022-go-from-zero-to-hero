@@ -6,6 +6,7 @@ CREATE TABLE phone_type(
   phone_type_id BIGSERIAL PRIMARY KEY,
   name VARCHAR(55)
 );
+
 CREATE TABLE contact(
   contact_id BIGSERIAL PRIMARY KEY,
   first_name VARCHAR(55),
@@ -31,12 +32,9 @@ INSERT INTO contact(first_name, last_name, phone_type_id,phone, email) VALUES('T
 SELECT * FROM contact;
 
 -- READ:ONE
-WITH variables (var1) as (
-   values ('Sil')
-)
 SELECT c.contact_id,c.first_name, c.last_name 
-FROM contact c, variables v
-WHERE CONCAT(c.first_name, ' ',c.last_name) LIKE CONCAT('%', v.var1, '%');
+FROM contact c
+WHERE CONCAT(c.first_name, ' ',c.last_name) LIKE CONCAT('%Sil%');
 
 -- UPDATE
 UPDATE contact c
